@@ -1,3 +1,8 @@
+/*	*****
+	*   *
+	*   *
+	*****
+*/
 package super_150;
 import java.util.*;
 public class pattern_4 {
