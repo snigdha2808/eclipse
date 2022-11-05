@@ -1,22 +1,25 @@
 import java.util.*;
-public class Main {
-    public static void main(String args[]) {
-        // Your Code Here
+public class PrintPrimes {
+	public static void main(String[] args)
+	{
 		Scanner sc=new Scanner(System.in);
 		int n=sc.nextInt();
-		int c;
-		for(int j=2;j<=n;j++)
+		for(int i=2;i<=n;i++)
 		{
-			c=0;
-			for(int i=1;i<=j;i++)
+			int c=0;
+			for(int j=2;j<=i/2;j++)
 			{
-            	if(j%i==0)
+				if(i%j==0)
 				{
-                	c++;
-            	}
-         	}
-         	if(c==2)
-         	System.out.println(j);
-      	}	
-    }
+					c++;
+					break;
+				}
+			}
+			if(c==0)
+			{
+				System.out.println(i);
+			}
+		}
+	}
 }
+
